@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
 
+
      <AllRoutes />
      {/* <Product/> */}
      <Dashboard/>
-    
 
     </div>
   );
