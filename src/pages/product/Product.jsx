@@ -55,7 +55,7 @@ const Product = () => {
           </Box>
           <Text></Text>
           <Box display="flex" justifyContent="space-between" padding="20px">
-            <Text fontSize="xx-large">Rs:595/-</Text>
+            <Text fontSize="xx-large">{data.price}</Text>
             <Button bgColor="orange">Buy Now</Button>
           </Box>
           <Box bgColor="green.300" padding="10px">
