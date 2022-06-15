@@ -6,11 +6,8 @@ import Product from './pages/product/Product';
 function App() {
   return (
     <div className="App">
-
-     <AllRoutes />
-
-     <Product/>
-
+    
+    
     </div>
   );
 }
