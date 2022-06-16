@@ -16,8 +16,7 @@ const Navbar = () => {
             <div id='about'>
             <Link to="/about"><p>About</p></Link>
             <Link to="/contact"><p>Contact</p></Link>
-            <Link to="/signin"><p>signin</p></Link>
-            <Link to="/signup"><p>signup</p></Link>
+
             </div>
             
         </div>

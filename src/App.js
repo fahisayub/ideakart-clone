@@ -8,10 +8,6 @@ function App() {
     <div className="App">
 
 
-     <AllRoutes/>
-     {/* <Product/> */}
-     {/* <Dashboard/> */}
-
     </div>
   );
 }
