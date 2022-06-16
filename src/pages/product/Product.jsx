@@ -35,7 +35,7 @@ const Product = () => {
           >
             <Img
               margin="auto"
-              src={`https://images-eu.ssl-images-amazon.com/images/I/41i4F7wRBWL.jpg`}
+              src={"https://images-eu.ssl-images-amazon.com/images/I/41i4F7wRBWL.jpg"}
             />
           </Box>
           <Text></Text>
