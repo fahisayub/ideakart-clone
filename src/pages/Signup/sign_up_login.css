@@ -1,0 +1,98 @@
+.sign-up-container,
+.login-container {
+  display: grid;
+ margin-bottom: 9%;
+  
+  margin-left: 13%;
+}
+
+.sign-up__content-container,
+.login__content-container {
+  width: 86%;
+  border-radius: 10px;
+  padding: 15px 20px;
+  /* min-width: 1000px; */
+}
+.sign-up__heading,
+.login__heading {
+
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 33px;
+  font-family: Roboto;
+  color: 333333;
+  margin-bottom: 15px;
+}
+.sign-up-form__input-container,
+.login-form__input-container {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up__input-field,
+.login__input-field {
+    line-height: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: Roboto;
+  color: 333333;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.sign-up__input-field input,
+.login__input-field input {
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid rgb(210, 193, 193);
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.sign-up__input-field input:focus,
+.login__input-field input:focus {
+  box-shadow: 0px 0px 3px var(--text-color-1);
+}
+.sign-up__input-field input[type="radio"]:focus {
+  box-shadow: none;
+}
+
+.sign-up-form__gender {
+  flex-direction: row;
+}
+.sign-up-form__gender label {
+  margin-right: 20px;
+}
+.sign-up__submit-btn,
+.submit-btn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  float: left;
+  background-color: var(--background-color-1);
+  border: 1px solid var(--border-color-1);
+  width: 20px;
+  background: rgb(92,184,92);
+  color: aliceblue;
+  border-radius: 5px;
+  margin-top: 10px;
+  min-width: 80px;
+}
+.rembr{
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: Roboto;
+  color: 333333;
+  word-spacing: 2px;
+}
+.span{
+  color: 333333;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 1px;
+
+}
