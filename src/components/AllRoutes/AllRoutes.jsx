@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
+import SignIn from '../../pages/Signin/SignIn'
+import SignUp from '../../pages/Signup/SignUp'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
@@ -14,6 +16,8 @@ const AllRoutes = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/signin' element={<SignIn />} />
+                <Route path='/signup' element={<SignUp />} />
             </Routes>
         <Footer /> 
     </div>

@@ -1,7 +1,6 @@
 import './App.css';
 import AllRoutes from './components/AllRoutes/AllRoutes';
-import Dashboard from './pages/dashboard/Dashboard';
-import Product from './pages/product/Product';
+
 
 
 function App() {
@@ -9,9 +8,9 @@ function App() {
     <div className="App">
 
 
-     <AllRoutes />
+     <AllRoutes/>
      {/* <Product/> */}
-     <Dashboard/>
+     {/* <Dashboard/> */}
 
     </div>
   );
