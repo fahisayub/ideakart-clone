@@ -53,7 +53,10 @@ const {id}=useParams();
           >
             <Img
               margin="auto"
+
+
               src={`${data.image}`}
+
             />
           </Box>
           <Text></Text>
