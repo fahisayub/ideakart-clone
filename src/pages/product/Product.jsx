@@ -14,19 +14,37 @@ import {
   Td,
   Link,
   Img,
-  TableCaption,
 } from "@chakra-ui/react";
 import { SpinnerIcon } from "@chakra-ui/icons";
+import { useSelector,useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { productApi } from "../../Redux/Product/product.action";
+import BookSpecTable from "../../components/Product/BookSpecTable";
+import HowLongTable from "../../components/Product/HowLongTable";
+import SearchCountTable from "../../components/Product/SearchCountTable";
+import { useParams } from "react-router-dom";
 const Product = () => {
+const {id}=useParams();
+  const {data}=useSelector(state=> state.product);
+  const dispatch=useDispatch();
+
+
+  useEffect(()=>{ 
+    
+    dispatch(productApi(id))
+  },[id,dispatch]);
+
+  if(Object.keys(data).length===0)return <Container>Loading....</Container>
   return (
     <div>
       <Container
         display="flex"
         margin="auto"
         maxWidth="80%"
-        border="1px solid black"
+        marginTop='20px'
+        
       >
-        <Container width="40%" border="1px solid black">
+        <Container width="40%" >
           <Box
             margin="auto"
             padding="10px"
@@ -35,52 +53,26 @@ const Product = () => {
           >
             <Img
               margin="auto"
-              src={`https://images-eu.ssl-images-amazon.com/images/I/41i4F7wRBWL.jpg`}
+
+
+              src={`${data.image}`}
+
             />
           </Box>
           <Text></Text>
           <Box display="flex" justifyContent="space-between" padding="20px">
-            <Text fontSize="xx-large">Rs:595/-</Text>
-            <Button bgColor="orange">Buy Now</Button>
+            <Text fontSize="xx-large">{data.price}</Text>
+            <Link href={data.ProductLink} >  <Button bgColor="orange" textDecorationLine='none'>Buy Now</Button></Link>
           </Box>
           <Box bgColor="green.300" padding="10px">
-            <Link>
+            <Link  href={data.ProductLink}>
               Get intant cashback when you pay using Amazon pay... Click Here
             </Link>
           </Box>
           <Heading fontSize="x-large">Book Specification</Heading>
-          <TableContainer>
-            <Table variant="simple">
-              <Tbody>
-                <Tr>
-                  <Th>inches</Th>
-                  <Td>millimetres (mm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>feet</Th>
-                  <Td>centimetres (cm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>yards</Th>
-                  <Td>metres (m)</Td>
-                </Tr>
-                <Tr>
-                  <Th>inches</Th>
-                  <Td>millimetres (mm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>feet</Th>
-                  <Td>centimetres (cm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>yards</Th>
-                  <Td>metres (m)</Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </TableContainer>
+          <BookSpecTable/>
         </Container>
-        <Container maxW="60%" border="1px solid black" padding="50px">
+        <Container maxW="60%"  padding="50px">
           <Box display="flex" justifyContent="space-between" padding="10px">
             <Text>Refresh</Text>
             <Button gap="10px" bgColor="green.400" color="white">
@@ -88,7 +80,7 @@ const Product = () => {
             </Button>
           </Box>
           <Box>
-            <Heading>Title</Heading>
+            <Heading fontSize='x-large'>{data.name}</Heading>
           </Box>
           <Box
             border="1px solid grey"
@@ -96,18 +88,8 @@ const Product = () => {
             borderRadius="10px"
             padding="10px"
           >
-            <Text>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium quos qui nisi odio eius, dignissimos in ut voluptates
-              quibusdam adipisci asperiores itaque reiciendis ipsum id sed
-              aliquam, error mollitia commodi. Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Praesentium quos qui nisi odio eius,
-              dignissimos in ut voluptates quibusdam adipisci asperiores itaque
-              reiciendis ipsum id sed aliquam, error mollitia commodi. Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
-              quos qui nisi odio eius, dignissimos in ut voluptates quibusdam
-              adipisci asperiores itaque reiciendis ipsum id sed aliquam, error
-              mollitia commodi.
+            <Text fontSize='sm'>
+             {data.description}
             </Text>
           </Box>
           <TableContainer>
@@ -121,8 +103,8 @@ const Product = () => {
               </Thead>
               <Tbody justifyContent="space-evenly">
                 <Tr bgColor="gray.100">
-                  <Td>inches</Td>
-                  <Td>millimetres (mm)</Td>
+                  <Td>{data.Store}</Td>
+                  <Td>{data.price}</Td>
                   <Td>
                     <Button bgColor="blue.500" color="white">
                       Buy Now
@@ -135,55 +117,21 @@ const Product = () => {
         </Container>
       </Container>
       <Container maxW="80%">
-        <Heading>Why you should read Principles of Management, Second Edition by Ramesh B Rudani </Heading>
+        <Heading>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Heading>
         <Box>
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            eveniet veniam quaerat magnam voluptates dicta quo iste nemo eos
-            labore minus ratione expedita laboriosam inventore perspiciatis
-            molestiae, natus ipsam dolore!
+           {data.Why}
           </Text>
         </Box>
       </Container>
       <Container maxW="80%">
-        <Heading>How long would it take for you to read Principles of Management, Second Edition </Heading>
+        <Heading>How long would it take for you to read {data.name}, Second Edition </Heading>
         <Box border="1px solid black" bgColor="gray.100">
           <Text fontSize="x-large">
             Depending on your reading style, this is how much time you would
             take to complete reading this book.
           </Text>
-          <TableContainer>
-            <Table variant="simple">
-              <Tbody>
-                <Tr>
-                  <Th>inches</Th>
-                  <Td>millimetres (mm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>feet</Th>
-                  <Td>centimetres (cm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>yards</Th>
-                  <Td>metres (m)</Td>
-                </Tr>
-                <Tr>
-                  <Th>inches</Th>
-                  <Td>millimetres (mm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>feet</Th>
-                  <Td>centimetres (cm)</Td>
-                </Tr>
-                <Tr>
-                  <Th>yards</Th>
-                  <Td>metres (m)</Td>
-                </Tr>
-              </Tbody>
-              
-            </Table>
-           
-          </TableContainer>
+          <HowLongTable/>
           
           <Text textAlign='left' padding='10px'>
               So if you are a Reader belonging in the Good category, and you
@@ -207,8 +155,8 @@ const Product = () => {
             </Thead>
             <Tbody>
               <Tr bgColor="gray.100">
-                <Td>inches</Td>
-                <Td>millimetres (mm)</Td>
+                <Td>{Date.now()}</Td>
+                <Td>{data.price}</Td>
               </Tr>
             </Tbody>
           </Table>
@@ -216,26 +164,7 @@ const Product = () => {
       </Container>
       <Container maxW="80%">
         <Text>Serches in world for this book</Text>
-        <TableContainer bgColor="blue.300">
-          <Table variant="simple">
-            <Thead>
-              <Tr>
-                <Th>To convert</Th>
-                <Th>into</Th>
-                <Th isNumeric>multiply by</Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              <Tr >
-                <Td>inches</Td>
-                <Td>millimetres (mm)</Td>
-                <Td>
-                  <Button>Buy Now</Button>
-                </Td>
-              </Tr>
-            </Tbody>
-          </Table>
-        </TableContainer>
+        <SearchCountTable/>
       </Container>
       <Container>
         <Text>Top Reads</Text>
