@@ -4,6 +4,7 @@ import { productsApi } from "../../Redux/Home/home.actions";
 import style from "./allProducts.module.css";
 import { IoIosCart } from "react-icons/io";
 import { FaList } from "react-icons/fa";
+import{Link} from'react-router-dom';
 const Products = () => {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.AllProducts);
@@ -40,15 +41,17 @@ const Products = () => {
                 <p>{AllProducts.price}</p>
               </div>
               <div className={style.smrViewMorDiv}>
-                <div className={style.smrIconDiv}>
+                <Link to={`/${AllProducts.id}`}> <div className={style.smrIconDiv}>
                   <IoIosCart></IoIosCart>
                   View Now
-                </div>
+                </div></Link>
+               
                 <div>|</div>
-                <div className={style.smrIconDiv}>
+                <Link to={`/${AllProducts.id}`}><div className={style.smrIconDiv}>
                   <FaList></FaList>
                   More Details
-                </div>
+                </div></Link>
+                
               </div>
             </div>
           </div>

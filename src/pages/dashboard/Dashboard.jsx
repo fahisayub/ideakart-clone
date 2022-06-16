@@ -1,36 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Container,
   Tab,
   TabList,
   TabPanel,
   Tabs,
-  TabPanels,
+  TabPanels,Text
 } from "@chakra-ui/react";
+import DashHome from "./DashHome";
+import DashnewProd from "./DashnewProd";
+import DashProducts from "./DashProducts";
+import DashCredits from "./DashCredits";
 const Dashboard = () => {
   return (
     <div>
-      <Container>
-        <Tabs size="md" variant="enclosed" orientation="vertical" isFitted="true">
-          <TabList orientation='vertical'>
+      <Container maxWidth='70%' marginTop='50px'>
+        <Text fontSize='xx-large' textAlign='left' marginBottom='10px'>Your Dashboard</Text>
+        <Tabs size="lg" orientation="vertical"   >
+          <TabList width='200px' >
             <Tab>Home</Tab>
-            <Tab>New Product</Tab>
+            <Tab  >New Product</Tab>
             <Tab>Product</Tab>
             <Tab>Credit</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>Home</p>
+              <DashHome/>
             </TabPanel>
             <TabPanel>
-              <p>Add Product</p>
+              <DashnewProd/>
             </TabPanel>
             <TabPanel>
-              <p>My Products</p>
+              <DashProducts/>
             </TabPanel>
             <TabPanel>
-              <p>Your credits will be shown here</p>
+              <DashCredits/>
             </TabPanel>
           </TabPanels>
         </Tabs>

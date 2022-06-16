@@ -20,17 +20,19 @@ import { useSelector,useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { productApi } from "../../Redux/Product/product.action";
 import BookSpecTable from "../../components/Product/BookSpecTable";
-import How_long_Table from "../../components/Product/How_long_Table";
+import HowLongTable from "../../components/Product/HowLongTable";
 import SearchCountTable from "../../components/Product/SearchCountTable";
+import { useParams } from "react-router-dom";
 const Product = () => {
-  const id=1;
+const {id}=useParams();
   const {data}=useSelector(state=> state.product);
   const dispatch=useDispatch();
 
-  useEffect(()=>{
+
+  useEffect(()=>{ 
     
     dispatch(productApi(id))
-  },[id]);
+  },[id,dispatch]);
 
   if(Object.keys(data).length===0)return <Container>Loading....</Container>
   return (
@@ -39,9 +41,10 @@ const Product = () => {
         display="flex"
         margin="auto"
         maxWidth="80%"
-        border="1px solid black"
+        marginTop='20px'
+        
       >
-        <Container width="40%" border="1px solid black">
+        <Container width="40%" >
           <Box
             margin="auto"
             padding="10px"
@@ -56,17 +59,17 @@ const Product = () => {
           <Text></Text>
           <Box display="flex" justifyContent="space-between" padding="20px">
             <Text fontSize="xx-large">{data.price}</Text>
-            <Button bgColor="orange">Buy Now</Button>
+            <Link href={data.ProductLink} >  <Button bgColor="orange" textDecorationLine='none'>Buy Now</Button></Link>
           </Box>
           <Box bgColor="green.300" padding="10px">
-            <Link>
+            <Link  href={data.ProductLink}>
               Get intant cashback when you pay using Amazon pay... Click Here
             </Link>
           </Box>
           <Heading fontSize="x-large">Book Specification</Heading>
           <BookSpecTable/>
         </Container>
-        <Container maxW="60%" border="1px solid black" padding="50px">
+        <Container maxW="60%"  padding="50px">
           <Box display="flex" justifyContent="space-between" padding="10px">
             <Text>Refresh</Text>
             <Button gap="10px" bgColor="green.400" color="white">
@@ -111,7 +114,7 @@ const Product = () => {
         </Container>
       </Container>
       <Container maxW="80%">
-        <Heading>Why you should read {data.BookSpecification.BookName}, Second Edition by {data.BookSpecification.Author} </Heading>
+        <Heading>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Heading>
         <Box>
           <Text>
            {data.Why}
@@ -119,13 +122,13 @@ const Product = () => {
         </Box>
       </Container>
       <Container maxW="80%">
-        <Heading>How long would it take for you to read {data.BookSpecification.BookName}, Second Edition </Heading>
+        <Heading>How long would it take for you to read {data.name}, Second Edition </Heading>
         <Box border="1px solid black" bgColor="gray.100">
           <Text fontSize="x-large">
             Depending on your reading style, this is how much time you would
             take to complete reading this book.
           </Text>
-          <How_long_Table/>
+          <HowLongTable/>
           
           <Text textAlign='left' padding='10px'>
               So if you are a Reader belonging in the Good category, and you
