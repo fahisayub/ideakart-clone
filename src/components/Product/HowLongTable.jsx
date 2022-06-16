@@ -6,7 +6,7 @@ import{ Table,
     Tbody,
     Td,} from '@chakra-ui/react';
     import { useSelector } from "react-redux";
-const How_long_Table = () => {
+const How_Long_Table = () => {
     const {data}=useSelector(state=>{return state.product});
 
 
@@ -41,4 +41,4 @@ const How_long_Table = () => {
     );
 };
 
-export default How_long_Table;
+export default How_Long_Table;

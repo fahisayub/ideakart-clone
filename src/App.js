@@ -11,7 +11,7 @@ function App() {
 
      <AllRoutes />
      {/* <Product/> */}
-     <Dashboard/>
+     {/* <Dashboard/> */}
 
     </div>
   );
