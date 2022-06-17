@@ -3,10 +3,8 @@ import { Route, Routes } from 'react-router'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
 
+
 import Navbar from  '../Navbar/Navbar'
-
-
-
 
 
 import { Login } from '../Authentication/Login'
@@ -19,8 +17,6 @@ import { Container } from '@chakra-ui/react'
 const AllRoutes = () => {
   return (
 
-
-    
     <Container minH='500px' maxW='100%' marginBottom='50px' marginTop='20px'>
        
 
@@ -29,7 +25,6 @@ const AllRoutes = () => {
                 <Route path='/:id' element={<Products />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
- 
                 <Route path="/login" element={<Login/>}></Route>
                <Route path="/signUp" element={<SignUp />}></Route>
                 <Route path='/dashboard' element={<Dashboard />} />
