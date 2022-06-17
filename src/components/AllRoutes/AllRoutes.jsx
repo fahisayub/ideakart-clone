@@ -2,18 +2,18 @@ import React from 'react'
 import { Route, Routes } from 'react-router'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
+
+
+import Navbar from  '../Navbar/Navbar'
+
+
 import { Login } from '../Authentication/Login'
 import { SignUp } from '../Authentication/SignUp'
 import Product from '../../pages/product/Product'
 import Dashboard from '../../pages/dashboard/Dashboard'
 import Products from '../../pages/AllProducts/Products'
-
 import AccountInfo from '../../pages/accountInfo/AccountInfo'
 import { Container } from '@chakra-ui/react'
-
-
-
-
 const AllRoutes = () => {
   return (
 

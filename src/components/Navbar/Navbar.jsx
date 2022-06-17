@@ -1,4 +1,4 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList, Select, Switch } from '@chakra-ui/react';
+import { background, Button, Menu, MenuButton, MenuItem, MenuList, Select, Switch } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Valid_User } from '../../Redux/Authentication/Login/Action';
@@ -8,39 +8,35 @@ import { useSelector, useDispatch } from "react-redux";
 import { ChevronDownIcon } from '@chakra-ui/icons';
 const Navbar = () => {
     const auth  = useSelector((store) => store.auth);
-
-
     const dispatch = useDispatch();
     
     return (
-    <div id='navbar'>
+    <div id='navbar' >
             <div id='titile'>
             <Link to='/'><p id='logo'>IDEAKART</p></Link>
             <div>
-            <input type="text" id='search' placeholder='Search' />
-            <button id='button'>Search</button>
+            <div className='search-part'>
+                <input type="text" placeholder='Search'  className="search-part" />
+                <button className='button'>Search</button>
             </div>
-            </div>          
-            <div id='about'>
-            <Link to="/about"><p>About</p></Link>
-            <Link to="/contact"><p>Contact</p></Link>
-
-            <Link to='/signup'><p>Sign Up</p></Link>
-            <Link to='/signin'><p>Sign In</p></Link>
-            <Link to="/dashboard"><p>Dashboard</p></Link>
             
-
-
+            </div>
+            </div> 
+  <div className='all'>    
+           <div className='about'><Link to="/about"><p>About</p></Link></div>
+            <div className='contact'>
+            <Link to="/contact"><p>Contact</p></Link>
             </div>
         {!auth.auth ? (
-        <div className="Navbar">
+        
+        <div >
           <div>
-            <div>
+            <div className='signinup'>
               <Link to="/login">              
                   Login               
               </Link>
               {"   "}
-              <Link to="/signUp">
+              <Link to="/signUp" id='signup'>
                   SignUp              
               </Link>
             </div>
@@ -53,7 +49,7 @@ const Navbar = () => {
               <div>
                 <div>
                   <Menu >
-                    <MenuButton  as={Button } rightIcon={<ChevronDownIcon />}>
+                    <MenuButton  as={Button } rightIcon={<ChevronDownIcon /> } className='new-button' color={'white'} background='none' >
                     {auth.email}
                     </MenuButton>
                     <MenuList>
@@ -62,10 +58,10 @@ const Navbar = () => {
                         onClick={() =>
                           dispatch(Valid_User({ auth: false, email: "" }))
                         } 
-                        > LogOut
+                        > signout
                       </Button>
                       </Link></MenuItem>
-                      <MenuItem>Create a Copy</MenuItem>                
+                      <MenuItem> <Link to="/dashboard"><p>Dashboard</p></Link></MenuItem>                
                     </MenuList>
                   </Menu>
                 </div>
@@ -78,6 +74,7 @@ const Navbar = () => {
         </div>
       )}
     </div>
+</div>     
   );
 };
 export default Navbar;
