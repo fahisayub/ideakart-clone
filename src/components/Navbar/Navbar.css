@@ -96,5 +96,5 @@ a{
 }
 button.new-button:focus {
     outline: none;
-    color: black;
+    background-color: black;
 }

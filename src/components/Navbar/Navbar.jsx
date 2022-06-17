@@ -49,7 +49,7 @@ const Navbar = () => {
               <div>
                 <div>
                   <Menu >
-                    <MenuButton  as={Button } rightIcon={<ChevronDownIcon /> } className='new-button' color={'white'} background='none' >
+                    <MenuButton  as={Button } rightIcon={<ChevronDownIcon className='new-button'/> } className='new-button' color={'white'} background='none' >
                     {auth.email}
                     </MenuButton>
                     <MenuList>
