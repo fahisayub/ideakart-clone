@@ -4,11 +4,11 @@ import About from '../About/About'
 import Contact from '../Contact/Contact'
 
 
-import Home from '../Home/Home'
+//import Home from '../Home/Home'
 
 import Dashboard from '../../pages/dashboard/Dashboard'
 import Products from '../../pages/AllProducts/Products'
-
+import Product from '../../pages/product/Product'
 
 const AllRoutes = () => {
   return (

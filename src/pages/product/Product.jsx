@@ -23,6 +23,7 @@ import BookSpecTable from "../../components/Product/BookSpecTable";
 import HowLongTable from "../../components/Product/HowLongTable";
 import SearchCountTable from "../../components/Product/SearchCountTable";
 import { useParams } from "react-router-dom";
+import TopReads from "../../components/Product/TopReads";
 const Product = () => {
 const {id}=useParams();
   const {data}=useSelector(state=> state.product);
@@ -168,8 +169,9 @@ const {id}=useParams();
       </Container>
       <Container>
         <Text>Top Reads</Text>
-        <Box></Box>
+       
       </Container>
+      <TopReads></TopReads>
     </div>
   );
 };
