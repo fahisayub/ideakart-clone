@@ -24,10 +24,7 @@ const Navbar = () => {
             <div id='about'>
             <Link to="/about"><p>About</p></Link>
             <Link to="/contact"><p>Contact</p></Link>
-
-            <Link to='/signup'><p>Sign Up</p></Link>
-            <Link to='/signin'><p>Sign In</p></Link>
-            <Link to="/dashboard"><p>Dashboard</p></Link>
+           
             
 
 
@@ -65,7 +62,7 @@ const Navbar = () => {
                         > LogOut
                       </Button>
                       </Link></MenuItem>
-                      <MenuItem>Create a Copy</MenuItem>                
+                      <MenuItem> <Link to="/dashboard"><p>Dashboard</p></Link></MenuItem>                
                     </MenuList>
                   </Menu>
                 </div>
