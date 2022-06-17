@@ -5,10 +5,9 @@ import AllRoutes from './components/AllRoutes/AllRoutes';
 
 function App() {
   return (
-    <div className="App">
-
-
-    </div>
+    <>
+    <AllRoutes/>
+    </>
   );
 }
 
