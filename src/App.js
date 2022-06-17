@@ -8,10 +8,6 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
 
-    <>
-    <AllRoutes/>
-    </>
-
     <div className="App" >
       <Navbar />
       <AllRoutes />
