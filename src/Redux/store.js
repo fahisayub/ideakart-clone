@@ -7,11 +7,7 @@ import { SignUpReducer } from "./Authentication/SignUp/SingUpReducer";
 import { LoginReducer } from "./Authentication/Login/LoginReducer";
 
 
-const rootReducer=combineReducers({
-  auth: LoginReducer,
-  SignUp: SignUpReducer,
-  product:productReducer,
-  AllProducts : productsReducer 
+
 
 import { dashboardReducer } from "./Dashboard/Dashboard.reducer";
 import { AccountInfoReducer } from "./AccountInfo/AcInfo.reducer";
@@ -19,6 +15,8 @@ import { AccountInfoReducer } from "./AccountInfo/AcInfo.reducer";
 
 
 const rootReducer=combineReducers({
+  auth: LoginReducer,
+  SignUp: SignUpReducer,
     product:productReducer,
   AllProducts : productsReducer ,
   dashboard:dashboardReducer,
