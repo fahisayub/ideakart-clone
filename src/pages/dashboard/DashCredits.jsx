@@ -6,7 +6,7 @@ const DashCredits = () => {
     <div>
       <Text fontSize='16px' textAlign='left'>The amount credited to your account will be shown here!</Text>
       <Text fontSize='16px' textAlign='left'>
-        You can update your account Info <Link fontSize='14px' color='blue' href="#" >here</Link>
+        You can update your account Info <Link fontSize='14px' color='blue' href="/accountInfo" >here</Link>
       </Text>
     </div>
   );
