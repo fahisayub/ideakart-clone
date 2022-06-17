@@ -53,6 +53,9 @@ const Navbar = () => {
                     {auth.email}
                     </MenuButton>
                     <MenuList>
+                    <MenuItem> <Link to="/dashboard"><p>Dashboard</p></Link></MenuItem>                
+                      <MenuItem> <Link to="/dashboard"><p>Account info</p></Link></MenuItem>                
+                      <MenuItem> <Link to="/dashboard"><p>Notifications</p></Link></MenuItem>      
                       <MenuItem><Link to="/">
                       <Button colorScheme='teal' variant='link'
                         onClick={() =>
@@ -61,7 +64,7 @@ const Navbar = () => {
                         > signout
                       </Button>
                       </Link></MenuItem>
-                      <MenuItem> <Link to="/dashboard"><p>Dashboard</p></Link></MenuItem>                
+                                
                     </MenuList>
                   </Menu>
                 </div>
