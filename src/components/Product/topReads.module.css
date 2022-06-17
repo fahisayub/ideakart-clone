@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+.smrTopMainDiv{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+} 
+
+.smrTopMainDiv > div{
+    display: flex;
+    gap: 15px;
+    padding: 10px; 
+   
+}
+
+.smrTopMainDiv > div > div{
+    border: 1px solid #c8c7c7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.smrTopMainDiv > div > div> div > img{
+    display: block;
+    margin: auto; 
+    width: 250px;
+    height: 370px;
+}
+.smrTopMainDiv > div > div> div > p{
+    color: rgb(4, 177, 177);
+}
+
+.smrTopinnerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #b4b4b4;
+}
+
+.smrTopinnerDiv div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smrTopinnerDiv>div:nth-last-child(2){
+    color: #b4b4b4;
+}

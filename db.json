@@ -561,6 +561,7 @@
       }
     }
   ],
+
   "users": [
     {
       "username": "rahulkumam",
@@ -638,4 +639,39 @@
     }
   ]
   
+
+  "myProducts": [
+    {
+      "name": "lkdj",
+      "your_experience": "djfoi",
+      "media": "codechef.png",
+      "mode": "offline",
+      "platform": "Flipkart",
+      "isAproved": true,
+      "isRejected": false,
+      "id": 1
+    },
+    {
+      "name": "ldjfls;klf",
+      "your_experience": "djlfjdslf",
+      "media": "codechefflogo.png",
+      "mode": "online",
+      "platform": "Flipkart",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 2
+    },
+    {
+      "name": "ldjfdlsf;j",
+      "your_experience": "djfldksjf",
+      "media": "codechef.png",
+      "mode": "online",
+      "platform": "Amazon",
+      "isAproved": false,
+      "isRejected": true,
+      "id": 3
+    }
+  ],
+  "accountInfo": []
+
 }

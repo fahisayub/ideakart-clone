@@ -1,0 +1,54 @@
+
+.smrULList{
+    text-align: left;
+}
+
+.smrEarnmoneyDiv{
+    width: 80%;
+    margin: auto;
+}
+
+.smrMainContainer{ 
+    display: flex;
+    gap: 20px; 
+
+} 
+
+.smrMainContainer>div{
+    border: 1px solid;
+    padding: 20px;
+    width: 33.33%;
+}
+
+
+
+.smrNumber{
+    width: 25px;
+    height: 25px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.smrNumber+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.smrEarnmoneyDiv>h1{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: left;
+    padding: 10px;
+}
+.smrGuideVideo>iframe{
+   width: 100%;
+   margin: auto;
+   margin-top: 20px;
+}
+
+.smrGuideVideo>iframe+button{
+    margin-top: 20px;
+}

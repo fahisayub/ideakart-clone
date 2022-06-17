@@ -12,6 +12,18 @@ const rootReducer=combineReducers({
   SignUp: SignUpReducer,
   product:productReducer,
   AllProducts : productsReducer 
+
+import { dashboardReducer } from "./Dashboard/Dashboard.reducer";
+import { AccountInfoReducer } from "./AccountInfo/AcInfo.reducer";
+
+
+
+const rootReducer=combineReducers({
+    product:productReducer,
+  AllProducts : productsReducer ,
+  dashboard:dashboardReducer,
+  accountInfo:AccountInfoReducer
+
 });
 const composeEnhancers=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||compose;
 
