@@ -80,4 +80,23 @@
 .smrIconDiv+div{
     color: #d6d4d4;
     padding-top: 10px;
+} 
+
+.smrHowLongDiv{
+   padding: 20px; 
+   margin-top: 20px;
+}
+.smrHowLongTextDiv{
+    margin-top: 20px;
+
+} 
+
+.smrWhyYouREadDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.smrTopReadheading{
+  text-align: center;
+  font-size: 20px;
 }

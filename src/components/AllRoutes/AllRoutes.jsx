@@ -22,11 +22,11 @@ const AllRoutes = () => {
 
             <Routes>
                 <Route path='/' element={<Products />} />
-                <Route path='/:id' element={<Products />} />
+                <Route path='/:id' element={<Product />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path="/login" element={<Login/>}></Route>
-               <Route path="/signUp" element={<SignUp />}></Route>
+              <Route path="/signUp" element={<SignUp />}></Route>
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/accountInfo' element={<AccountInfo/>}/>
 
