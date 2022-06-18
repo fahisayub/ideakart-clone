@@ -7,36 +7,37 @@ import Contact from '../../pages/Contact/Contact'
 
 
 
+import Navbar from  '../Navbar/Navbar'
+
+
+import { Login } from '../Authentication/Login'
+import { SignUp } from '../Authentication/SignUp'
+import Product from '../../pages/product/Product'
+import Dashboard from '../../pages/dashboard/Dashboard'
 import Products from '../../pages/AllProducts/Products'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
-import EarnMoney from '../../pages/EarnMoney/EarnMoney'
-import SignIn from '../../pages/Signin/SignIn'
-import SignUp from '../../pages/Signup/SignUp'
-import Privacy from '../../pages/Privacy policy/Privacy'
-import Refund from '../../pages/Refund/Refund'
-import Search from '../../pages/Search/Search'
-
-
+import AccountInfo from '../../pages/accountInfo/AccountInfo'
+import { Container } from '@chakra-ui/react'
 const AllRoutes = () => {
   return (
-    <div>
-      <Navbar />
+
+    <Container minH='500px' maxW='100%' marginBottom='50px' marginTop='20px'>
+       
+
             <Routes>
                 <Route path='/' element={<Products />} />
-                <Route path='/:id' element={<Products />} />
+                <Route path='/:id' element={<Product />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/signin' element={<SignIn/>} />
-                <Route path='/signup' element={<SignUp />} />
-                <Route path='/earn' element={<EarnMoney />} />
-                <Route path='/privacy' element={<Privacy/>}/>
-                <Route path='/refund' element={<Refund/>}/>
-                <Route path='/search' element={<Search/>}/>
+
+                <Route path="/login" element={<Login/>}></Route>
+              <Route path="/signUp" element={<SignUp />}></Route>
+                <Route path='/dashboard' element={<Dashboard />} />
+                <Route path='/accountInfo' element={<AccountInfo/>}/>
+
             </Routes>
       
-      <Footer />
-    </div>
+    </Container>
+
   )
 }
 
