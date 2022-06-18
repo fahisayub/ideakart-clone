@@ -28,6 +28,7 @@
     background-color: cadetblue;
     border-radius: 50%;
     margin: auto;
+    text-align: center;
 }
 
 .smrNumber+h2{

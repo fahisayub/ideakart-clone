@@ -7,7 +7,7 @@ import {
 import { useState } from "react";
 import axios from "axios";
 import "./Login.css";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { New_User } from "../../Redux/Authentication/SignUp/Actions";
 

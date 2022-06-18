@@ -561,7 +561,6 @@
       }
     }
   ],
-
   "users": [
     {
       "username": "rahulkumam",
@@ -636,10 +635,17 @@
       "is18": "false",
       "confirmPassword": "123456",
       "id": 9
+    },
+    {
+      "email": "fahisayub@gmail.com",
+      "password": "1234",
+      "mobileNum": "8606299",
+      "is18": "false",
+      "username": "fahisayub",
+      "confirmPassword": "1234",
+      "id": 10
     }
   ],
-  
-
   "myProducts": [
     {
       "name": "lkdj",
@@ -683,5 +689,4 @@
     }
   ],
   "accountInfo": []
-
 }

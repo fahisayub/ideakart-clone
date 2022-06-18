@@ -1,4 +1,4 @@
-import { background, Button, Menu, MenuButton, MenuItem, MenuList, Select, Switch } from '@chakra-ui/react';
+import { Button, Menu, MenuButton, MenuItem, MenuList, } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Valid_User } from '../../Redux/Authentication/Login/Action';
@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ChevronDownIcon } from '@chakra-ui/icons';
 const Navbar = () => {
     const auth  = useSelector((store) => store.auth);
+    console.log(auth);
     const dispatch = useDispatch();
     
     return (
@@ -54,8 +55,8 @@ const Navbar = () => {
                     </MenuButton>
                     <MenuList>
                     <MenuItem> <Link to="/dashboard"><p>Dashboard</p></Link></MenuItem>                
-                      <MenuItem> <Link to="/dashboard"><p>Account info</p></Link></MenuItem>                
-                      <MenuItem> <Link to="/dashboard"><p>Notifications</p></Link></MenuItem>      
+                      <MenuItem> <Link to="/accountInfo"><p>Account info</p></Link></MenuItem>                
+                      <MenuItem> <Link to="/notification"><p>Notifications</p></Link></MenuItem>      
                       <MenuItem><Link to="/">
                       <Button colorScheme='teal' variant='link'
                         onClick={() =>
