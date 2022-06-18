@@ -40,9 +40,10 @@ const Contact = () => {
       <div id='textarea'>
       <textarea name="" id="" cols="30" rows="10" placeholder='Message for me'></textarea>
       <br />
-      <button id="contactbutton">Contact</button>
+      <button id="contactbutton">Send Message</button>
       </div>
       </div>
+      
     </div>
   )
 }
