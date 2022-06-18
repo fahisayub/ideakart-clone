@@ -9,13 +9,13 @@ const Products = () => {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.AllProducts);
 
-  console.log(data, loading, error);
+ // console.log(data, loading, error);
 
   useEffect(() => {
     //if(data.length === 0){
     dispatch(productsApi());
     //}
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={style.smrContainer}>

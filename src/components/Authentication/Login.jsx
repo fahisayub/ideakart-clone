@@ -28,12 +28,14 @@ export const Login = () => {
     passwordRef.current.value = "";
     axios.get("http://localhost:8080/users").then(({ data }) => {
      
+     
       for (let i = 0; i < data.length; i++) {
         if (
           loginCredentails.email === data[i].email &&
           loginCredentails.password === data[i].password
         ) {
-          dispatch(Valid_User({ auth: true, email: loginCredentails.email }));
+          let user=data.filter((user)=>loginCredentails.email===user.email && loginCredentails.password===user.password);
+          dispatch(Valid_User({ auth: true, email: loginCredentails.email,username:user[0].username  }));
           break;
         }
 
@@ -91,10 +93,10 @@ export const Login = () => {
               Log in
             </button>        
         </Stack>
-        <Link to="/signup" color={'blue.400'} fontWeight='500' MarginTop={'7px'} fontSize={'13px'}>signup</Link>
+        <Link to="/signup" color={'blue.400'} fontWeight='500' marginTop={'7px'} fontSize={'13px'}>signup</Link>
         <br/>
                   {/* <a href=''></a> */}
-                  <Link fontSize={'13px'} fontWeight='500' color={'blue.400'} MarginTop={'7px'}>Forgot your password?</Link>
+                  <Link fontSize={'13px'} fontWeight='500' color={'blue.400'} marginTop={'7px'}>Forgot your password?</Link>
       </form>
       </div>
       </div>
