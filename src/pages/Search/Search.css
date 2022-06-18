@@ -1,0 +1,13 @@
+#searchSk input{
+ width: 80%;
+ border: 0.5px solid gray;
+ padding: 5px;
+}
+#searchSk{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+#searchSk h1{
+    font-size: 40px;
+}

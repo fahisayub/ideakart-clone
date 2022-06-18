@@ -1,7 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
+import About from '../../pages/About/About'
+import Contact from '../../pages/Contact/Contact'
+
+
+
 
 
 import Navbar from  '../Navbar/Navbar'
@@ -25,6 +28,7 @@ const AllRoutes = () => {
                 <Route path='/:id' element={<Product />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
+
                 <Route path="/login" element={<Login/>}></Route>
               <Route path="/signUp" element={<SignUp />}></Route>
                 <Route path='/dashboard' element={<Dashboard />} />
@@ -33,6 +37,7 @@ const AllRoutes = () => {
             </Routes>
       
     </Container>
+
   )
 }
 

@@ -11,3 +11,6 @@
     font-size: small;
     cursor: pointer;
 }
+#footer p:hover{
+    text-decoration: underline;
+}
