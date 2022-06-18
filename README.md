@@ -9,57 +9,57 @@ The site has a user friendly search engine and a quick delivery system. We got t
 ## Pages And Features:
 
 ### Home 
-![](SiteImages\2022-06-18.png)
+![](SiteImages/2022-06-18.png)
 
 
 ### Product Details 
-![](SiteImages\product.png)
+![](SiteImages/product.png)
 
 
 
 ### Signup 
-![App Screenshot](SiteImages\Signup.png)
+![App Screenshot](SiteImages/Signup.png)
 
 
 ### Signin
-![App Screenshot](SiteImages\login.png)
+![App Screenshot](SiteImages/login.png)
 
 ### Privacy Policy
-![App Screenshot](SiteImages\policy.png)
+![App Screenshot](SiteImages/policy.png)
 
 
 
 
 ### Refund Policy 
-![App Screenshot](SiteImages\refund.png)
+![App Screenshot](SiteImages/refund.png)
 
 
 
 
 
 ### User Dashboard 
-![App Screenshot](SiteImages\dashboard.png)
+![App Screenshot](SiteImages/dashboard.png)
 
 
 
 
 ### User Account Information
-![App Screenshot](SiteImages\accInfo.png)
+![App Screenshot](SiteImages/accInfo.png)
 
 ### Notifications 
-![App Screenshot](SiteImages\Notify.png)
+![App Screenshot](SiteImages/Notify.png)
 
 ### Earn Money online 
-![App Screenshot](SiteImages\Earbmoney.png)
+![App Screenshot](SiteImages/Earbmoney.png)
 
 ### Upload Product you have
-![App Screenshot](SiteImages\addProduct.png)
+![App Screenshot](SiteImages/addProduct.png)
 
 ### Contact us 
-![App Screenshot](SiteImages\contacts.png)
+![App Screenshot](SiteImages/contacts.png)
 
 ### About us 
-![App Screenshot](SiteImages\aboutus.png)
+![App Screenshot](SiteImages/aboutus.png)
 
 
 
