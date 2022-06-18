@@ -24,6 +24,8 @@ import HowLongTable from "../../components/Product/HowLongTable";
 import SearchCountTable from "../../components/Product/SearchCountTable";
 import { useParams } from "react-router-dom";
 import TopReads from "../../components/Product/TopReads";
+import style from "../AllProducts/allProducts.module.css";
+
 const Product = () => {
 const {id}=useParams();
   const {data}=useSelector(state=> state.product);
@@ -117,17 +119,17 @@ const {id}=useParams();
           </TableContainer>
         </Container>
       </Container>
-      <Container maxW="80%">
+      <Container maxW="80%" >
         <Heading>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Heading>
-        <Box>
+        <Box className={style.smrWhyYouREadDiv}>
           <Text>
            {data.Why}
           </Text>
         </Box>
       </Container>
-      <Container maxW="80%">
+      <Container maxW="80%" className={style.smrHowLongTextDiv}>
         <Heading>How long would it take for you to read {data.name}, Second Edition </Heading>
-        <Box border="1px solid black" bgColor="gray.100">
+        <Box border="1px solid gray" bgColor="gray.100" className={style.smrHowLongDiv}>
           <Text fontSize="x-large">
             Depending on your reading style, this is how much time you would
             take to complete reading this book.
@@ -167,9 +169,8 @@ const {id}=useParams();
         <Text>Serches in world for this book</Text>
         <SearchCountTable/>
       </Container>
-      <Container>
-        <Text>Top Reads</Text>
-       
+      <Container className={style.smrTopReadheading}>
+        <Text fontSize='x-large'>Top Reads</Text>
       </Container>
       <TopReads></TopReads>
     </div>
