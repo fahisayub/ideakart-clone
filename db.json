@@ -563,6 +563,7 @@
   ],
   "users": [
     {
+
       "email": "fahisayub@gmail.com",
       "password": "1234",
       "mobileNum": "8606299",
@@ -570,6 +571,7 @@
       "username": "fahisayub",
       "confirmPassword": "1234",
       "id": 1
+
     }
   ],
   "myProducts": [
