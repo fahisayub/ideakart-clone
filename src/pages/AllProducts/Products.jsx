@@ -36,7 +36,7 @@ const Products = () => {
               <img src={AllProducts.image} alt="1" />
             </div>
             <div className={style.smrSecondDiv}>
-              <div>
+              <div className={style.title}>
                 <h4>{AllProducts.name}</h4>
                 <p>{AllProducts.price}</p>
               </div>

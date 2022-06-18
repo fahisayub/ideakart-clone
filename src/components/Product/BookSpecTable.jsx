@@ -20,7 +20,7 @@ const BookSpecTable = () => {
                   <Td>{`${data.BookSpecification.Binding}`}</Td>
                 </Tr>
                 <Tr>
-                  <Td fontWeight='semibold'>Auhor</Td>
+                  <Td fontWeight='semibold'>Author</Td>
                   <Td>{`${data.BookSpecification.Author}`}</Td>
                 </Tr>
                 <Tr>
