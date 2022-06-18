@@ -7,47 +7,59 @@ Ideakart is a site that gives an idea and a platform for the book you want. This
 The site has a user friendly search engine and a quick delivery system. We got this site as our construct week project. we tried to build similar webpages along with the same features and functionality. 
 
 ## Pages And Features:
-### Home 
 
+### Home 
+![](public\SiteImages\2022-06-18.png)
 
 
 ### Product Details 
+![](public\SiteImages/product.png)
 
 
 
-
-### Signup/Signin 
-
-
+### Signup 
+![App Screenshot](public\SiteImages\Signup.png)
 
 
+### Signin
+![App Screenshot](public\SiteImages\login.png)
 
 ### Privacy Policy
-
+![App Screenshot](public\SiteImages\policy.png)
 
 
 
 
 ### Refund Policy 
-
+![App Screenshot](public\SiteImages\refund.png)
 
 
 
 
 
 ### User Dashboard 
+![App Screenshot](public\SiteImages\dashboard.png)
 
 
 
 
+### User Account Information
+![App Screenshot](public\SiteImages\accInfo.png)
 
-### User Account Information 
 ### Notifications 
-### Earn Money online 
-### Upload Product you have
-### Contact us 
-### About us 
+![App Screenshot](public\SiteImages\Notify.png)
 
+### Earn Money online 
+![App Screenshot](public\SiteImages\Earbmoney.png)
+
+### Upload Product you have
+![App Screenshot](public\SiteImages\addProduct.png)
+
+### Contact us 
+![App Screenshot](public\SiteImages\contacts.png)
+
+### About us 
+![App Screenshot](public\SiteImages\aboutus.png)
 
 
 
@@ -61,11 +73,14 @@ The site has a user friendly search engine and a quick delivery system. We got t
 - React-router-dom
 - Axios
 - Redux
+- Redux-thunk
 - chakra-Ui
 
 **Server:** Json-server
 
-## Deployment Link: 
+## Deployment Link :( https://ideakart-clone-rct101.netlify.app)
+ - Note :- for showing data need to run command "npm run json-server"
+
 
 
 ## Blog Link: 
