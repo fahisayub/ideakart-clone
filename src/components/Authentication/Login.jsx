@@ -49,7 +49,7 @@ export const Login = () => {
     dispatch(New_User(false));
   }, []);
   if (auth.auth) {
-    return <Navigate to="/counter" />;
+    return <Navigate to="/" />;
   }
   return (
     <div >
@@ -60,7 +60,7 @@ export const Login = () => {
         <Stack spacing={3} className="login-form__input-container">
         <div className="login-form__email login__input-field">
           <label htmlFor="login__email">Email</label>
-          <Input         
+          <Input   height={'30px'}      
             ref={emailRef}          
             type="email"
             placeholder="Enter your email"
@@ -71,7 +71,7 @@ export const Login = () => {
           </div>
           <div className="login-form__password login__input-field">
                     <label htmlFor="login__password">Password</label>
-          <Input
+          <Input height={'30px'}
             ref={passwordRef}
           
             type="password"

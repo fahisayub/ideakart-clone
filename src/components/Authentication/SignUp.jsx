@@ -74,7 +74,7 @@ export const SignUp = () => {
               <label htmlFor="sign-up__email">Mobile Number</label>
               <InputGroup>
             
-            <Input
+            <Input height={'30px'}
               type="number"
               placeholder="phone number"
               name="mobileNum"
@@ -84,7 +84,7 @@ export const SignUp = () => {
             </div>
             <div className="sign-up-form__email sign-up__input-field">
               <label htmlFor="sign-up__email">Email</label>
-              <Input
+              <Input height={'30px'}
                
                 type="email"
                 placeholder="Enter your email"
@@ -98,7 +98,7 @@ export const SignUp = () => {
                 <label htmlFor="sign-uppassword">Password <span className='span'>(6 characters minimum)</span></label>
                 </div>
              
-                <Input
+                <Input height={'30px'}
                 type="password"
                 placeholder="Enter your password"
                 name="password"
