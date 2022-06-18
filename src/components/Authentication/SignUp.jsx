@@ -41,7 +41,7 @@ export const SignUp = () => {
       axios
         .post("http://localhost:8080/users", { ...SignUpCredentails })
         .then((res) => {
-          alert("SignUp Sucessful");
+          // alert("SignUp Sucessful");
           dispatch(New_User(true));
           <Navigate to="/login" />
         });
