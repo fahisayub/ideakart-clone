@@ -10,6 +10,9 @@ import Products from '../../pages/AllProducts/Products'
 import AccountInfo from '../../pages/accountInfo/AccountInfo'
 import Notification from '../../pages/notification/Notification'
 import EarnMoney from '../../pages/EarnMoney/EarnMoney'
+import Search from '../../pages/Search/Search'
+import Privacy from '../../pages/Privacy policy/Privacy'
+import Refund from '../../pages/Refund/Refund'
 import { Container } from '@chakra-ui/react'
 const AllRoutes = () => {
   return (
@@ -29,6 +32,9 @@ const AllRoutes = () => {
                 <Route path='/accountInfo' element={<AccountInfo/>}/>
                 <Route path='/notification' element={<Notification/>}/>
                 <Route path='/earnmoney'element={<EarnMoney/>}/>
+                <Route path='/search'element={<Search/>}/>
+                <Route path='/privacy'element={<Privacy/>}/>
+                <Route path='/refund'element={<Refund/>}/>
 
             </Routes>
       

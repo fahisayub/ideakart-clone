@@ -13,7 +13,7 @@ const Footer = () => {
       <div>
        <Link to="/privacy"><p>Privacy Policy</p></Link> 
       <Link to="/refund"><p>Refund Policy</p></Link>  
-        <Link to="/earn"><p>Earn Money Online</p></Link>
+        <Link to="/earnmoney"><p>Earn Money Online</p></Link>
       </div>
       <div>
         <p>QuickBuyer</p>

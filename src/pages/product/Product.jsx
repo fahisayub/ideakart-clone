@@ -23,7 +23,6 @@ import HowLongTable from "../../components/Product/HowLongTable";
 import SearchCountTable from "../../components/Product/SearchCountTable";
 import { useParams } from "react-router-dom";
 import TopReads from "../../components/Product/TopReads";
-import style from "../AllProducts/allProducts.module.css";
 
 const Product = () => {
 const {id}=useParams();
