@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 } 
-
+.title{
+    font-size: 25px;
+    margin-left: 10px;
+}
 .smrTopMainDiv{
     width: 80%;
     margin: auto;

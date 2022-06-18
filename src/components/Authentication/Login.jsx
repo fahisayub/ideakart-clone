@@ -1,4 +1,4 @@
-import { Input, Stack, Button, Checkbox  ,Link} from "@chakra-ui/react";
+import { Input, Stack, Checkbox  ,Link} from "@chakra-ui/react";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
@@ -47,7 +47,7 @@ export const Login = () => {
 
   useEffect(() => {
     dispatch(New_User(false));
-  }, []);
+  }, [dispatch]);
   if (auth.auth) {
     return <Navigate to="/" />;
   }

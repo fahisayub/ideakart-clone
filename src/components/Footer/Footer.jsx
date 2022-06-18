@@ -8,12 +8,12 @@ const Footer = () => {
       <div>
         <Link to="/about"><p>About</p></Link>
         <Link to="/contact"><p>Contact</p></Link>
-        <p>Search</p>
+       <Link to="/search"><p>Search</p></Link> 
       </div>
       <div>
-        <p>Privacy Policy</p>
-        <p>Refund Policy</p>
-        <p>Earn Money Online</p>
+       <Link to="/privacy"><p>Privacy Policy</p></Link> 
+      <Link to="/refund"><p>Refund Policy</p></Link>  
+        <Link to="/earn"><p>Earn Money Online</p></Link>
       </div>
       <div>
         <p>QuickBuyer</p>

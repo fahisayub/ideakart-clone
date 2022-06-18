@@ -4,16 +4,18 @@ import{ Table,
     Tr,
     Th,
     Tbody,
-    Thead,
+    Thead,Text,
     Td,} from '@chakra-ui/react';
-    import { useSelector } from "react-redux";
+   // import { useSelector } from "react-redux";
 const SearchCountTable = () => {
 
-    const {data}=useSelector(state=>{return state.product});
+   // const {data}=useSelector(state=>{return state.product});
 
     return (
         <>
            <TableContainer bgColor="blue.300">
+           <Text>Serches in world for this book</Text>
+           <hr />
           <Table variant="simple">
             <Thead>
               <Tr>
