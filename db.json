@@ -562,9 +562,7 @@
     }
   ],
   "users": [
-
     {
-
       "email": "fahisayub@gmail.com",
       "password": "1234",
       "mobileNum": "8606299",
@@ -572,9 +570,16 @@
       "username": "fahisayub",
       "confirmPassword": "1234",
       "id": 1
-
+    },
+    {
+      "email": "hhh@gmail.com",
+      "password": "12345",
+      "mobileNum": "1234567891",
+      "is18": "false",
+      "username": "Roy Miller",
+      "confirmPassword": "12345",
+      "id": 2
     }
-
   ],
   "myProducts": [
     {
