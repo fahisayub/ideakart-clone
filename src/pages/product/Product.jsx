@@ -4,7 +4,6 @@ import {
   Container,
   Text,
   Button,
-  Heading,
   Table,
   TableContainer,
   Tr,
@@ -39,7 +38,7 @@ const {id}=useParams();
 
   if(Object.keys(data).length===0)return <Container>Loading....</Container>
   return (
-    <div>
+    <div >
       <Container
         display="flex"
         margin="auto"
@@ -47,7 +46,7 @@ const {id}=useParams();
         marginTop='20px'
         
       >
-        <Container width="40%" >
+        <Container width="35%" >
           <Box
             margin="auto"
             padding="10px"
@@ -62,9 +61,10 @@ const {id}=useParams();
 
             />
           </Box>
-          <Text></Text>
+          <Text textAlign='left' marginLeft='10px' fontSize='17px'>
+Buy it at best price from here</Text>
           <Box display="flex" justifyContent="space-between" padding="20px">
-            <Text fontSize="xx-large">{data.price}</Text>
+            <Text fontSize="xx-large">{data.price}/-</Text>
             <Link href={data.ProductLink} >  <Button bgColor="orange" textDecorationLine='none'>Buy Now</Button></Link>
           </Box>
           <Box bgColor="green.300" padding="10px">
@@ -72,10 +72,10 @@ const {id}=useParams();
               Get intant cashback when you pay using Amazon pay... Click Here
             </Link>
           </Box>
-          <Heading fontSize="x-large">Book Specification</Heading>
+          <Text fontSize="xx-large" padding='10px'>Book Specification</Text>
           <BookSpecTable/>
         </Container>
-        <Container maxW="60%"  padding="50px">
+        <Container maxW="70%"  padding="50px">
           <Box display="flex" justifyContent="space-between" padding="10px">
             <Text>Refresh</Text>
             <Button gap="10px" bgColor="green.400" color="white">
@@ -83,10 +83,11 @@ const {id}=useParams();
             </Button>
           </Box>
           <Box>
-            <Heading fontSize='x-large'>{data.name}</Heading>
+            <Text fontSize='xx-large' margin='10px'>{data.name}</Text>
           </Box>
           <Box
-            border="1px solid grey"
+            border="1px solid "
+            borderColor='gray.400'
             bgColor="gray.200"
             borderRadius="10px"
             padding="10px"
@@ -95,7 +96,7 @@ const {id}=useParams();
              {data.description}
             </Text>
           </Box>
-          <TableContainer>
+          <TableContainer borderRadius='5px'>
             <Table variant="simple">
               <Thead justifyContent="space-evenly">
                 <Tr>
@@ -119,18 +120,22 @@ const {id}=useParams();
           </TableContainer>
         </Container>
       </Container>
-      <Container maxW="80%" >
-        <Heading>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Heading>
-        <Box className={style.smrWhyYouREadDiv}>
-          <Text>
+
+      <Container maxW="80%" marginTop='30px'>
+        <Text fontSize='xx-large' margin='10px'>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Text>
+        <Box border='1px solid gray.200' borderRadius='5px' bg='gray.200'padding='10px' margin='20px 0px 50px 0px'>
+          <Text> 
+
            {data.Why}
           </Text>
         </Box>
       </Container>
-      <Container maxW="80%" className={style.smrHowLongTextDiv}>
-        <Heading>How long would it take for you to read {data.name}, Second Edition </Heading>
-        <Box border="1px solid gray" bgColor="gray.100" className={style.smrHowLongDiv}>
-          <Text fontSize="x-large">
+
+      <Container maxW="80%">
+        <Text fontSize='xx-large' margin='10px'>How long would it take for you to read {data.name}, Second Edition </Text>
+        <Box border="1px solid gray.200" borderRadius='5px' bg='gray.200'padding='10px' margin='20px 0px 50px 0px'>
+          <Text fontSize="x-large" >
+
             Depending on your reading style, this is how much time you would
             take to complete reading this book.
           </Text>
@@ -146,8 +151,8 @@ const {id}=useParams();
             </Text>
         </Box>
       </Container>
-      <Container maxW="80%">
-        <TableContainer>
+      <Container maxW="80%" >
+        <TableContainer margin='20px 0px 50px 0px' >
           <Table variant="simple">
             <Thead>
               <Tr>
@@ -166,11 +171,13 @@ const {id}=useParams();
         </TableContainer>
       </Container>
       <Container maxW="80%">
-        <Text>Serches in world for this book</Text>
+       
         <SearchCountTable/>
       </Container>
-      <Container className={style.smrTopReadheading}>
-        <Text fontSize='x-large'>Top Reads</Text>
+
+      <Container textAlign='left'maxW="80%">
+        <Text textAlign='left'fontSize='17px'>Top Read Books</Text>
+
       </Container>
       <TopReads></TopReads>
     </div>

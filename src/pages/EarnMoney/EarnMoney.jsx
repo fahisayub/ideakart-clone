@@ -1,7 +1,6 @@
 import React from "react";
-import { ListItem, UnorderedList } from "@chakra-ui/react";
+import { ListItem, UnorderedList,Button } from "@chakra-ui/react";
 import style from "./EarnMoney.module.css";
-import { Button, ButtonGroup } from '@chakra-ui/react'
 
 
 const EarnMoney = () => {

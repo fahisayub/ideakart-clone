@@ -21,14 +21,14 @@ const dispatch=useDispatch();
   }
   return (
     <div>
-      <Container maxWidth='70%' marginTop='50px'>
-        <Text fontSize='xx-large' textAlign='left' marginBottom='10px'>Your Dashboard</Text>
-        <Tabs size="lg" orientation="vertical" index={tabIndex} onChange={handleTabsChange} >
-          <TabList width='200px' >
-            <Tab>Home</Tab>
-            <Tab  >New Product</Tab>
-            <Tab>Product</Tab>
-            <Tab>Credit</Tab>
+      <Container maxWidth='80%' marginTop='20px'>
+        <Text fontSize='x-large' textAlign='left' marginBottom='30px'>Your Dashboard</Text>
+        <Tabs size="lg" orientation="vertical" index={tabIndex} onChange={handleTabsChange} variant='soft-rounded' >
+          <TabList width='200px' fontSize='15px'>
+            <Tab fontSize='15px'>Home</Tab>
+            <Tab  fontSize='15px'>New Product</Tab>
+            <Tab fontSize='15px'>Product</Tab>
+            <Tab fontSize='15px'>Credit</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

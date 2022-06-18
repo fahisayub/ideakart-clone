@@ -2,7 +2,6 @@ import React from 'react';
 import{ Table,
     TableContainer,
     Tr,
-    Th,
     Tbody,Container,
     Td,} from '@chakra-ui/react';
     import { useSelector } from "react-redux";
@@ -14,38 +13,38 @@ const BookSpecTable = () => {
     return (
         <>
             <TableContainer>
-            <Table variant="simple">
+            <Table variant="striped" colorScheme='gray'>
               <Tbody>
                 <Tr>
-                  <Th>Binding</Th>
+                  <Td fontWeight='semibold'>Binding</Td>
                   <Td>{`${data.BookSpecification.Binding}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Auhor</Th>
+                  <Td fontWeight='semibold'>Auhor</Td>
                   <Td>{`${data.BookSpecification.Author}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Language</Th>
+                  <Td fontWeight='semibold'>Language</Td>
                   <Td>{`${data.BookSpecification.Language}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>No of Pages</Th>
+                  <Td fontWeight='semibold'>No of Pages</Td>
                   <Td>{`${data.BookSpecification.No_of_pages}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Isbn-10</Th>
+                  <Td fontWeight='semibold'>Isbn-10</Td>
                   <Td>{`${data.BookSpecification.Isbn_10}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Isbn-13</Th>
+                  <Td fontWeight='semibold'>Isbn-13</Td>
                   <Td>{`${data.BookSpecification.Isbn_13}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Dimension</Th>
+                  <Td fontWeight='semibold'>Dimension</Td>
                   <Td>{`${data.BookSpecification.Dimension}`}</Td>
                 </Tr>
                 <Tr>
-                  <Th>Publisher</Th>
+                  <Td fontWeight='semibold'>Publisher</Td>
                   <Td>{`${data.BookSpecification.Publisher}`}</Td>
                 </Tr>
               </Tbody>

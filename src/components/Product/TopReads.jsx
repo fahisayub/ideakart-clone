@@ -6,6 +6,7 @@ import { FaList } from "react-icons/fa";
 const TopReads = () => {
   return (
     <div className={style.smrTopMainDiv}>
+      <h2 className={style.title}>Top Reads</h2>
       <div>
         <div>
           <div>
