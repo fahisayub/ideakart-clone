@@ -13,7 +13,7 @@ The site has a user friendly search engine and a quick delivery system. We got t
 
 
 ### Product Details 
-![](SiteImages/product.png)
+![](SiteImages\product.png)
 
 
 
@@ -50,7 +50,7 @@ The site has a user friendly search engine and a quick delivery system. We got t
 ![App Screenshot](SiteImages\Notify.png)
 
 ### Earn Money online 
-![App Screenshot](https://github.com/fahisayub/ideakart-clone/blob/main/SiteImages/Earbmoney.png)
+![App Screenshot](SiteImages\Earbmoney.png)
 
 ### Upload Product you have
 ![App Screenshot](SiteImages\addProduct.png)
