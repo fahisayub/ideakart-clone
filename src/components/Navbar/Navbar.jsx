@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to='/'><p id='logo'>IDEAKART</p></Link>
             <div>
             <div className='search-part'>
-                <input type="text" placeholder='Search'  className="search-part" />
+                <input  type="text" placeholder='Search'  className="search-part" />
                 <button className='button'>Search</button>
             </div>
             
