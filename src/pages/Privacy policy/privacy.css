@@ -1,0 +1,15 @@
+#privacysk h1{
+    font-size: 30px;
+}
+#privacysk>div{
+    margin-top: 30px;
+}
+#privacysk>div h5{
+    font-size: 20px;
+}
+#privacysk>div p{
+    font-size: 15px;
+}
+#privacysk {
+    padding: 20px 40px;
+}

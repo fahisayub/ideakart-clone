@@ -23,6 +23,8 @@ import HowLongTable from "../../components/Product/HowLongTable";
 import SearchCountTable from "../../components/Product/SearchCountTable";
 import { useParams } from "react-router-dom";
 import TopReads from "../../components/Product/TopReads";
+import style from "../AllProducts/allProducts.module.css";
+
 const Product = () => {
 const {id}=useParams();
   const {data}=useSelector(state=> state.product);
@@ -118,18 +120,22 @@ Buy it at best price from here</Text>
           </TableContainer>
         </Container>
       </Container>
+
       <Container maxW="80%" marginTop='30px'>
         <Text fontSize='xx-large' margin='10px'>Why you should read {data.name}, Second Edition by {data.BookSpecification.Author} </Text>
         <Box border='1px solid gray.200' borderRadius='5px' bg='gray.200'padding='10px' margin='20px 0px 50px 0px'>
           <Text> 
+
            {data.Why}
           </Text>
         </Box>
       </Container>
+
       <Container maxW="80%">
         <Text fontSize='xx-large' margin='10px'>How long would it take for you to read {data.name}, Second Edition </Text>
         <Box border="1px solid gray.200" borderRadius='5px' bg='gray.200'padding='10px' margin='20px 0px 50px 0px'>
           <Text fontSize="x-large" >
+
             Depending on your reading style, this is how much time you would
             take to complete reading this book.
           </Text>
@@ -168,8 +174,10 @@ Buy it at best price from here</Text>
        
         <SearchCountTable/>
       </Container>
+
       <Container textAlign='left'maxW="80%">
         <Text textAlign='left'fontSize='17px'>Top Read Books</Text>
+
       </Container>
       <TopReads></TopReads>
     </div>

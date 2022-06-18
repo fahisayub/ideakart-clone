@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
+import About from '../../pages/About/About'
+import Contact from '../../pages/Contact/Contact'
 import { Login } from '../Authentication/Login'
 import { SignUp } from '../Authentication/SignUp'
 import Product from '../../pages/product/Product'
@@ -22,8 +22,9 @@ const AllRoutes = () => {
                 <Route path='/:id' element={<Product />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
+
                 <Route path="/login" element={<Login/>}></Route>
-               <Route path="/signUp" element={<SignUp />}></Route>
+              <Route path="/signUp" element={<SignUp />}></Route>
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/accountInfo' element={<AccountInfo/>}/>
                 <Route path='/notification' element={<Notification/>}/>
@@ -32,6 +33,7 @@ const AllRoutes = () => {
             </Routes>
       
     </Container>
+
   )
 }
 

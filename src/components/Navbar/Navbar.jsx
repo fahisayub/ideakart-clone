@@ -27,6 +27,7 @@ const Navbar = () => {
            <div className='about'><Link to="/about"><p>About</p></Link></div>
             <div className='contact'>
             <Link to="/contact"><p>Contact</p></Link>
+
             </div>
         {!auth.auth ? (
         
