@@ -34,11 +34,11 @@ const Navbar = () => {
           <div>
             <div className='signinup'>
               <Link to="/login">              
-                  Login               
+                  Sign In             
               </Link>
               {"   "}
               <Link to="/signUp" id='signup'>
-                  SignUp              
+                  Sign Up              
               </Link>
             </div>
           </div>
