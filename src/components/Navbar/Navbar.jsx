@@ -34,7 +34,7 @@ const Navbar = () => {
           <div>
             <div className='signinup'>
               <Link to="/login">              
-                  Login               
+                  Signin               
               </Link>
               {"   "}
               <Link to="/signUp" id='signup'>

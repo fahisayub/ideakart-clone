@@ -1,7 +1,13 @@
 #contact{
     background-image: url('https://wallpaperaccess.com/full/1657858.jpg');
     height: 600px;
+    width: 100%;
+    
 
+}
+#headingSk{
+    text-align: center;
+    font-size: 16px;
 }
 
 #contact input{
@@ -43,9 +49,13 @@
     background-color: rgb(236, 205, 195);
 }
 #contactbutton{
-    background-color: rgb(3, 3, 53);
+    background-color: rgb(105, 172, 4);
     padding: 8px 15px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    width: 150px;
+    margin: auto;
+    margin-left: 45%;
+   
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import { ListItem, UnorderedList,Button } from "@chakra-ui/react";
+import { ListItem, UnorderedList,Button, } from "@chakra-ui/react";
 import style from "./EarnMoney.module.css";
+import{Link} from 'react-router-dom'
 
 
 const EarnMoney = () => {
@@ -10,7 +11,7 @@ const EarnMoney = () => {
       <div className={style.smrMainContainer}>
         <div>
           <div className={style.smrNumber}>
-            <p>1</p>
+            1
           </div>
 
           <h2>Upload Products that you have!</h2>
@@ -30,7 +31,7 @@ const EarnMoney = () => {
         </div>
         <div>
           <div className={style.smrNumber}>
-            <p>2</p>
+            2
           </div>
           <h2>Provide a brief description of how to use!</h2>
           <div className={style.smrULList}>
@@ -48,7 +49,7 @@ const EarnMoney = () => {
         </div>
         <div>
           <div className={style.smrNumber}>
-            <p>3</p>
+            3
           </div>
           <h2>On Approval get scratch cards and earn money!</h2>
           <div className={style.smrULList}>
@@ -76,8 +77,9 @@ const EarnMoney = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe> 
-         <Button colorScheme='blue'>Get started!</Button>
+        
       </div>
+      <Button as={Link} colorScheme='blue' to='/dashboard' marginLeft='45%' marginTop='10px' >Get started!</Button>
     </div>
   );
 };
