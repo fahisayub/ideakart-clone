@@ -4,5 +4,10 @@ p{
     font-weight: 400px;
     line-height: 28px;
     color: #333333;
+    line-height: 40px;
+}
+#text{
+    padding: 60px 60px;
+    
 }
 
