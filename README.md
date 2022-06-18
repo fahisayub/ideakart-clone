@@ -9,57 +9,57 @@ The site has a user friendly search engine and a quick delivery system. We got t
 ## Pages And Features:
 
 ### Home 
-![](public\SiteImages\2022-06-18.png)
+![](SiteImages\2022-06-18.png)
 
 
 ### Product Details 
-![](public\SiteImages/product.png)
+![](SiteImages/product.png)
 
 
 
 ### Signup 
-![App Screenshot](public\SiteImages\Signup.png)
+![App Screenshot](SiteImages\Signup.png)
 
 
 ### Signin
-![App Screenshot](public\SiteImages\login.png)
+![App Screenshot](SiteImages\login.png)
 
 ### Privacy Policy
-![App Screenshot](public\SiteImages\policy.png)
+![App Screenshot](SiteImages\policy.png)
 
 
 
 
 ### Refund Policy 
-![App Screenshot](public\SiteImages\refund.png)
+![App Screenshot](SiteImages\refund.png)
 
 
 
 
 
 ### User Dashboard 
-![App Screenshot](public\SiteImages\dashboard.png)
+![App Screenshot](SiteImages\dashboard.png)
 
 
 
 
 ### User Account Information
-![App Screenshot](public\SiteImages\accInfo.png)
+![App Screenshot](SiteImages\accInfo.png)
 
 ### Notifications 
-![App Screenshot](public\SiteImages\Notify.png)
+![App Screenshot](SiteImages\Notify.png)
 
 ### Earn Money online 
-![App Screenshot](public\SiteImages\Earbmoney.png)
+![App Screenshot](https://github.com/fahisayub/ideakart-clone/blob/main/SiteImages/Earbmoney.png)
 
 ### Upload Product you have
-![App Screenshot](public\SiteImages\addProduct.png)
+![App Screenshot](SiteImages\addProduct.png)
 
 ### Contact us 
-![App Screenshot](public\SiteImages\contacts.png)
+![App Screenshot](SiteImages\contacts.png)
 
 ### About us 
-![App Screenshot](public\SiteImages\aboutus.png)
+![App Screenshot](SiteImages\aboutus.png)
 
 
 
