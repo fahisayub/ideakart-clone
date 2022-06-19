@@ -78,16 +78,15 @@ The site has a user friendly search engine and a quick delivery system. We got t
 
 **Server:** Json-server
 
-## Deployment Link :( https://ideakart-clone-rct101.netlify.app)
+## Deployment Link :
+### ( https://ideakart-clone-rct101.netlify.app)
  - Note :- for showing data need to run command "npm run json-server"
 
-
-
 ## Blog Link: 
-
+### https://medium.com/@shubhamrakhonde507/masai-school-construct-week-project-377075ef06ec
 
 ## Presentation Video Link: 
-
+### https://drive.google.com/file/d/1zakthYtXTrITWJb6hZyV1n7tZToXiieT/view
 
 ## Team members: 
 1. Muhammed Fahiz

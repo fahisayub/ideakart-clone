@@ -579,6 +579,42 @@
       "username": "Roy Miller",
       "confirmPassword": "12345",
       "id": 2
+    },
+    {
+      "email": "jack@gmail.com",
+      "password": "121212",
+      "mobileNum": "1234567891",
+      "is18": "false",
+      "username": "Jack Reacher",
+      "confirmPassword": "121212",
+      "id": 3
+    },
+    {
+      "email": "Smr@gmail.com",
+      "password": "123456",
+      "mobileNum": "123456789",
+      "is18": "false",
+      "username": "Shubham",
+      "confirmPassword": "123456",
+      "id": 4
+    },
+    {
+      "email": "kalpesh@gmail.com",
+      "password": "123456",
+      "mobileNum": "123456",
+      "is18": "false",
+      "username": "kalpesh",
+      "confirmPassword": "123456",
+      "id": 5
+    },
+    {
+      "email": "vishvambhar@gmail.com",
+      "password": "123456",
+      "mobileNum": "132334565232",
+      "is18": "false",
+      "username": "Vish",
+      "confirmPassword": "123456",
+      "id": 6
     }
   ],
   "myProducts": [
@@ -621,6 +657,36 @@
       "isAproved": false,
       "isRejected": false,
       "id": 4
+    },
+    {
+      "name": "Book1",
+      "your_experience": "jekfwhnkljcd;fpoewk;f'pd",
+      "media": "2022-03-26 (1).png",
+      "mode": "offline",
+      "platform": "Amazon",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 5
+    },
+    {
+      "name": "book2",
+      "your_experience": "153csdnckldmnc",
+      "media": "2022-03-14 (1).png",
+      "mode": "online",
+      "platform": "Flipkart",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 6
+    },
+    {
+      "name": "book3",
+      "your_experience": "kldjchkdsacmlsdkafco;lskcsdk",
+      "media": "2022-04-04 (5).png",
+      "mode": "online",
+      "platform": "Flipkart",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 7
     }
   ],
   "accountInfo": []
