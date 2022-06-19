@@ -69,6 +69,8 @@ The site has a user friendly search engine and a quick delivery system. We got t
 ## Tech Stack
 
 **Libraries:** 
+- HTML
+- CSS
 - React 
 - React-router-dom
 - Axios
