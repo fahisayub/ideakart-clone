@@ -18,7 +18,7 @@ export const tabChangeApi = (index) => (dispatch) => {
 export const addProductApi = (product) => (dispatch) => {
   dispatch({ type: ADD_PRODUCT_REQUEST });
   axios
-    .post("http://localhost:8080/myProducts", {...product,isAproved:false,isRejected:false})
+    .post(`${process.env.REACT_APP_BASE_URL}/myProducts`, {...product,isAproved:false,isRejected:false})
     .then((res) => {
       dispatch({ type: ADD_PRODUCT_SUCCESS, payload: res.data });
     })
@@ -31,7 +31,7 @@ export const addProductApi = (product) => (dispatch) => {
 export const getProductsApi = () => (dispatch) => {
   dispatch({ type: GET_PRODUCTS_REQUEST });
   axios
-    .get("http://localhost:8080/myProducts")
+    .get(`${process.env.REACT_APP_BASE_URL}/myProducts`)
     .then((res) => {
       //  console.log(res.data)
 

@@ -26,7 +26,7 @@ export const Login = () => {
     e.preventDefault();
     emailRef.current.value = "";
     passwordRef.current.value = "";
-    axios.get("http://localhost:8080/users").then(({ data }) => {
+    axios.get(`${process.env.REACT_APP_BASE_URL}/users`).then(({ data }) => {
      
      
       for (let i = 0; i < data.length; i++) {

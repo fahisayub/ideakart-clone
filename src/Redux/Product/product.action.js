@@ -3,7 +3,7 @@ import { PRODUCT_FETCH_FAILURE, PRODUCT_FETCH_REQUEST, PRODUCT_FETCH_SUCCESS } f
 
 export const productApi = (id) =>(dispatch)=> {
     dispatch({type:PRODUCT_FETCH_REQUEST});
-    axios.get(`http://localhost:8080/booksData/${id}`).then((res)=>{
+    axios.get(`${process.env.REACT_APP_BASE_URL}/booksData/${id}`).then((res)=>{
         dispatch({type:PRODUCT_FETCH_SUCCESS,payload:res.data});
     }).catch((err)=>{
         dispatch({type:PRODUCT_FETCH_FAILURE});

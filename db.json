@@ -562,9 +562,7 @@
     }
   ],
   "users": [
-
     {
-
       "email": "fahisayub@gmail.com",
       "password": "1234",
       "mobileNum": "8606299",
@@ -572,9 +570,16 @@
       "username": "fahisayub",
       "confirmPassword": "1234",
       "id": 1
-
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "1234",
+      "mobileNum": "12345",
+      "is18": "false",
+      "username": "demo",
+      "confirmPassword": "1234",
+      "id": 2
     }
-
   ],
   "myProducts": [
     {
@@ -616,7 +621,40 @@
       "isAproved": false,
       "isRejected": false,
       "id": 4
+    },
+    {
+      "name": "book",
+      "your_experience": "dummy",
+      "media": "codechefflogo.png",
+      "mode": "online",
+      "platform": "Amazon",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 5
+    },
+    {
+      "name": "book",
+      "your_experience": "jkdjflk",
+      "media": "codechefflogo.png",
+      "mode": "online",
+      "platform": "Flipkart",
+      "isAproved": false,
+      "isRejected": false,
+      "id": 6
     }
   ],
-  "accountInfo": []
+  "accountInfo": [
+    {
+      "Ac_No": "ljdsj",
+      "ifsc": "jdkjflsldjflk",
+      "bankName": "ljdflk",
+      "upiId": "ldfj",
+      "address1": "lkjfkld",
+      "address2": "lkdjflkd",
+      "city": "jdlfj",
+      "state": "kldfj",
+      "pincode": "ldjfl",
+      "id": 1
+    }
+  ]
 }
