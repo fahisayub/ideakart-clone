@@ -2,9 +2,12 @@ import React from "react";
 import { ListItem, UnorderedList,Button, } from "@chakra-ui/react";
 import style from "./EarnMoney.module.css";
 import{Link} from 'react-router-dom'
+import { useSelector } from "react-redux";
 
 
 const EarnMoney = () => {
+  const {auth}= useSelector(state=>state.auth);
+  console.log(auth);
   return (
     <div className={style.smrEarnmoneyDiv}>
       <h1>Earn Money Online | Working from Home</h1>
@@ -79,7 +82,7 @@ const EarnMoney = () => {
         ></iframe> 
         
       </div>
-      <Button as={Link} colorScheme='blue' to='/dashboard' marginLeft='45%' marginTop='10px' >Get started!</Button>
+      <Button as={Link} colorScheme='blue' to={auth?'/dashboard':'/login'} marginLeft='45%' marginTop='10px' >Get started!</Button>
     </div>
   );
 };

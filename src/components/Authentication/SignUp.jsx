@@ -31,7 +31,7 @@ export const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    axios.get("http://localhost:8080/users").then(({ data }) => {
+    axios.get(`${process.env.REACT_APP_BASE_URL}/users`).then(({ data }) => {
       for (let i = 0; i < data.length; i++) {
         if (SignUpCredentails.email === data[i].email) {
           alert("User Already Exits , Please Login");
@@ -39,7 +39,7 @@ export const SignUp = () => {
         }
       }
       axios
-        .post("http://localhost:8080/users", { ...SignUpCredentails })
+        .post(`${process.env.REACT_APP_BASE_URL}/users`, { ...SignUpCredentails })
         .then((res) => {
           // alert("SignUp Sucessful");
           dispatch(New_User(true));

@@ -572,6 +572,7 @@
       "id": 1
     },
     {
+
       "email": "hhh@gmail.com",
       "password": "12345",
       "mobileNum": "1234567891",
@@ -615,6 +616,7 @@
       "username": "Vish",
       "confirmPassword": "123456",
       "id": 6
+
     }
   ],
   "myProducts": [
@@ -659,6 +661,7 @@
       "id": 4
     },
     {
+
       "name": "Book1",
       "your_experience": "jekfwhnkljcd;fpoewk;f'pd",
       "media": "2022-03-26 (1).png",
@@ -669,6 +672,7 @@
       "id": 5
     },
     {
+
       "name": "book2",
       "your_experience": "153csdnckldmnc",
       "media": "2022-03-14 (1).png",
@@ -677,6 +681,7 @@
       "isAproved": false,
       "isRejected": false,
       "id": 6
+
     },
     {
       "name": "book3",
@@ -687,7 +692,21 @@
       "isAproved": false,
       "isRejected": false,
       "id": 7
+
     }
   ],
-  "accountInfo": []
+  "accountInfo": [
+    {
+      "Ac_No": "ljdsj",
+      "ifsc": "jdkjflsldjflk",
+      "bankName": "ljdflk",
+      "upiId": "ldfj",
+      "address1": "lkjfkld",
+      "address2": "lkdjflkd",
+      "city": "jdlfj",
+      "state": "kldfj",
+      "pincode": "ldjfl",
+      "id": 1
+    }
+  ]
 }
