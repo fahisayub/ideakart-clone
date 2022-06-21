@@ -7,47 +7,59 @@ Ideakart is a site that gives an idea and a platform for the book you want. This
 The site has a user friendly search engine and a quick delivery system. We got this site as our construct week project. we tried to build similar webpages along with the same features and functionality. 
 
 ## Pages And Features:
-### Home 
 
+### Home 
+![](SiteImages/2022-06-18.png)
 
 
 ### Product Details 
+![](SiteImages/product.png)
 
 
 
-
-### Signup/Signin 
-
-
+### Signup 
+![App Screenshot](SiteImages/Signup.png)
 
 
+### Signin
+![App Screenshot](SiteImages/login.png)
 
 ### Privacy Policy
-
+![App Screenshot](SiteImages/policy.png)
 
 
 
 
 ### Refund Policy 
-
+![App Screenshot](SiteImages/refund.png)
 
 
 
 
 
 ### User Dashboard 
+![App Screenshot](SiteImages/dashboard.png)
 
 
 
 
+### User Account Information
+![App Screenshot](SiteImages/accInfo.png)
 
-### User Account Information 
 ### Notifications 
-### Earn Money online 
-### Upload Product you have
-### Contact us 
-### About us 
+![App Screenshot](SiteImages/Notify.png)
 
+### Earn Money online 
+![App Screenshot](SiteImages/Earbmoney.png)
+
+### Upload Product you have
+![App Screenshot](SiteImages/addProduct.png)
+
+### Contact us 
+![App Screenshot](SiteImages/contacts.png)
+
+### About us 
+![App Screenshot](SiteImages/aboutus.png)
 
 
 
@@ -57,22 +69,26 @@ The site has a user friendly search engine and a quick delivery system. We got t
 ## Tech Stack
 
 **Libraries:** 
+- HTML
+- CSS
 - React 
 - React-router-dom
 - Axios
 - Redux
+- Redux-thunk
 - chakra-Ui
 
 **Server:** Json-server
 
-## Deployment Link: 
-
+## Deployment Link :
+### ( https://ideakart-clone-rct101.netlify.app)
+ - Note :- for showing data need to run command "npm run json-server"
 
 ## Blog Link: 
-
+### https://medium.com/@shubhamrakhonde507/masai-school-construct-week-project-377075ef06ec
 
 ## Presentation Video Link: 
-
+### https://drive.google.com/file/d/1zakthYtXTrITWJb6hZyV1n7tZToXiieT/view
 
 ## Team members: 
 1. Muhammed Fahiz
